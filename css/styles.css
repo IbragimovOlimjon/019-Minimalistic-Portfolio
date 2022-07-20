@@ -1,5 +1,5 @@
  /* CUSTOM PROPY */
- :root {
+:root {
     --color:#ffffff;
     --global-color-bg:#FAFAFA;
     --global-color-title-text-link:#33323D;
@@ -124,6 +124,7 @@ img {
 }
 
 
+/* SITENAV */
 .sitenav__list {
     display: flex;
     margin: 0;
@@ -156,6 +157,7 @@ img {
 .sitenav__link:active {
     opacity: 0.6;
 }
+
 
 /* HERO */
 .hero {
@@ -539,3 +541,4 @@ img {
 .features-portfolio__link:active {
     opacity: 0.6;
 }
+/* ////////////////////////////////////////////////////////////////////////////////////// */
