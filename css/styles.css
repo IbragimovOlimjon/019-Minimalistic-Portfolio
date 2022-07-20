@@ -132,7 +132,7 @@ img {
     list-style: none;
 }
 
-.sitenav__iteam:not(:last-child) {
+.sitenav__item:not(:last-child) {
     margin-right: 43px;
 }
 
