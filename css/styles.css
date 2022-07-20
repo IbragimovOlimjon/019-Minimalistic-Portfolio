@@ -145,6 +145,8 @@ img {
     text-transform: uppercase;
     color: var(--global-color-title-text-link);
     transition: 0.2s ease;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .sitenav__link:hover {
@@ -308,6 +310,7 @@ img {
     padding-top: 74px;
     padding-bottom: 150px;
 }
+
 .cta__container {
     display: flex;
     align-items: center;
@@ -352,7 +355,7 @@ img {
 }
 
 .cta__link:hover {
-    background-color: #000;
+    background-color: var(--global-color-title-text-link);
     color: var(--color);
 }
 
@@ -366,6 +369,7 @@ img {
     padding-bottom: 24px;
     background-color: var(--global-color-title-text-link);
 }
+
 .site-footer__container {
     display: flex;
     align-items: center;
@@ -453,4 +457,85 @@ img {
 
 .socials__img:active {
     opacity: 0.8;
+}
+
+
+/* PORTFOLIO-HTML */
+.features-portfolio {
+    padding-top: 40px;
+    padding-bottom: 74px;
+}
+
+.features-portfolio__item:not(:last-child) {
+    margin-bottom: 78px;
+}
+
+.features-portfolio__item {
+    display: flex;
+    align-items: center;
+}
+
+.features-portfolio__item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.features-portfolio__img {
+    width: 540px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 125px;
+}
+
+.features-portfolio__img--left {
+    margin: 0;
+    margin-left: 125px;
+}
+
+.features-portfolio__info {
+    width: 100%;
+    max-width: 350px;
+    padding-top: 103px;
+    padding-bottom: 103px;
+    border-top: 1px solid rgba(51, 50, 61, 0.2);
+    border-bottom: 1px solid rgba(51, 50, 61, 0.2);
+}
+
+.features-portfolio__title {
+    font-family: var(--font-ibarra);
+    margin: 0;
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+}
+
+.features-portfolio__text {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.features-portfolio__link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--global-color-title-text-link);
+    padding: 17px 33px;
+    border: 1px solid var(--global-color-title-text-link);
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.features-portfolio__link:hover {
+    background-color: var(--global-color-title-text-link);
+    color: var(--color);
+}
+
+.features-portfolio__link:active {
+    opacity: 0.6;
 }
