@@ -468,16 +468,16 @@ img {
     padding-bottom: 74px;
 }
 
-.features-portfolio__item:not(:last-child) {
+.features-portfolio__data:not(:last-child) {
     margin-bottom: 78px;
 }
 
-.features-portfolio__item {
+.features-portfolio__data {
     display: flex;
     align-items: center;
 }
 
-.features-portfolio__item:nth-child(even) {
+.features-portfolio__data:nth-child(even) {
     flex-direction: row-reverse;
 }
 
