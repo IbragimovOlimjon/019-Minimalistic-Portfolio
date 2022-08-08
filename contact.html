@@ -35,7 +35,7 @@
             <!-- CONTACT-ME -->
             <section class="main-contact">
                 <div class="main-contact__container container">
-                    <h2 class="main-contact__title">Get in Touch</h2>
+                    <h2 class="main-contact__title contact-title">Get in Touch</h2>
                     <div class="main-contact__info">
                         <p class="main-contact__text">I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.</p>
                         <ul class="main-contact__list">
@@ -57,6 +57,32 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </section>
+
+            <!-- CONTACT-FORM -->
+            <section class="contact-page">
+                <div class="contact-page__container container">
+                    <h1 class="contact-page__title contact-title">Contact Me</h1>
+                    <form action="https://echo.htmlacademy.ru" class="contact-form">
+                        <div class="contact-page__wrapper">
+                            <label for="username">Name</label>
+                            <input type="text" id="username" name="name" placeholder="Name" required>
+                        </div>
+
+                        <div class="contact-page__wrapper">
+                            <label for="email">Email Address</label>
+                            <input class="contact-page__email" type="email" id="email" name="email" placeholder="Email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
+                            <div class="contact-input-error">This is wrong</div>
+                        </div>
+
+                        <div class="contact-page__wrapper">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        </div>
+
+                        <button class="touch__btn" type="submit">Send message</button>
+                    </form>
                 </div>
             </section>
     </main>

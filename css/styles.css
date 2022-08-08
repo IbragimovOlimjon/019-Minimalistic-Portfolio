@@ -32,7 +32,7 @@
 @font-face {
     font-family: 'Ibarra Real Nova';
     src: url('../font/IbarraRealNova-Regular.woff2') format('woff2'),
-        url('../font/IbarraRealNova-Regular.woff') format('woff');
+    url('../font/IbarraRealNova-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -65,6 +65,8 @@ body {
     background-color: var(--global-color-bg);
     color: var(--global-color-title-text-link);
 }
+
+
 
 /* MAIN-LINK */
 .main-link {
@@ -718,7 +720,7 @@ img {
 /* CONTACT-HTML */
 .main-contact {
     padding-top: 40px;
-    padding-bottom: 47px;
+    padding-bottom: 24px;
 }
 
 .main-contact__container {
@@ -730,7 +732,7 @@ img {
     border-bottom: 1px solid rgba(51, 50, 61, 0.2);
 }
 
-.main-contact__title {
+.contact-title {
     width: 100%;
     max-width: 350px;
     font-weight: 700;
@@ -786,5 +788,104 @@ img {
 .main-contact__icon:active {
     color: rgba(95, 180, 162, 0.7);
 }
+
+
+/* CONTACT-PAGE */
+.contact-page {
+    padding-top: 24px;
+    padding-bottom: 109px;
+}
+
+.contact-page__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 635px;
+}
+.contact-page__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+    color: rgba(51, 50, 61, 0.8);
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: rgba(51, 50, 61, 0.4);
+    padding: 9px 16px;
+    border: 1px solid transparent;
+    background-color: rgba(51, 50, 61, 0.2);
+}
+
+input:valid {
+    border-color:#54cbb2;
+    background-color: rgba(84, 203, 178, 0.1);
+}
+
+.contact-page__email:invalid {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: var(--global-color-title-text-link);
+    border-color:  red;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid + .contact-input-error {
+    display: block;
+    position: absolute;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    color: red;
+    left: 9px;
+    top: 94px;
+    font-style: italic;
+}
+
+.contact-input-error {
+    display: none;
+    position: absolute;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    color: red;
+    left: 9px;
+    top: 94px;
+    font-style: italic;
+}
+
+
+
+textarea {
+width: 100%;
+min-height: 100px;
+resize: vertical;
+font-weight: 400;
+font-size: 13px;
+line-height: 30px;
+color: rgba(51, 50, 61, 0.4);
+padding: 9px 16px;
+background-color: rgba(51, 50, 61, 0.2);
+border: transparent;
+}
+
+.touch__btn {
+}
+
+
 
 /* ////////////////////////////////////////////////////////////////////////////////////// */
