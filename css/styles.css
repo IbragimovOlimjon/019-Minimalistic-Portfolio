@@ -823,7 +823,7 @@ img {
 .contact-page__wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
     position: relative;
 }
 
@@ -900,6 +900,29 @@ textarea {
 }
 
 .touch__btn {
+    border: none;
+    padding: 0;
+    background-color: var(--color-hero-link);
+    color: var(--color);
+    padding: 17px 41px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: 0.1s ease;
+}
+
+.touch__btn:hover {
+    background-color: var(--color);
+    color: var(--global-color-title-text-link);
+    border: 1px solid var(--global-color-title-text-link);
+}
+
+.touch__btn:active {
+    opacity: 0.6;
 }
 
 
